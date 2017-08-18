@@ -1,0 +1,5 @@
+Tolerancia de Asistencia
+Evaluación Actitudinal
+- Asistencia: Hasta las 18:20 minutos
+- Tardanza: De 18:20 a 19:00 Tardanza (-1 Punto)
+- Falta: Después de las 19:00 Falta (-1.5 Puntos) 
