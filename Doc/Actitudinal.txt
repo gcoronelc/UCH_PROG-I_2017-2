@@ -1,6 +1,15 @@
-Tolerancia de Asistencia
-- Asistencia: Hasta las 8:20 minutos
-- Tardanza: De 8:20 a 9:00 Tardanza (-1 Punto)
-- Falta: Después de las 9:00 Falta (-1.5 Puntos) 
-Controles: 2 controles en los primeros 15 minutos
+NOTA ACTITUDINAL
+===================================================
+
+> Tolerancia de Asistencia
+    - Asistencia: Hasta las 6:20 minutos
+    - Tardanza: De 6:20 a 7:00 Tardanza   (-1)
+    - Falta: Después de las 7:00          (-1.5)
+
+> Control 1: Semana 3
+
+> Control 2: Semana 6
+
+
+
 
