@@ -2,7 +2,7 @@
     Vicente, Aguila, Acosta
 
 2.- Principios SOLID
-    Torres, Quispe
+    Torres, Ayala, 
 
 3.- Expresiones Lambda y Strem en Java 8
     Romero, Lunarejo, Lazo
@@ -11,12 +11,12 @@
     Cueva, Mauricio, CCoicca
 
 5.- Manejo de Archivos Log
-    Ayala, Cabezas, Siguas
+
 
 6.- Manejo de Datos Genericos - Generic
 
 
-7.- Patrón Inyección de Dependencias
+7.- PatrÃ³n InyecciÃ³n de Dependencias
     Jara, Vasquez, Roca
 
 
