@@ -12,6 +12,7 @@
 - Inicio: 18-AGOSTO-2017
 - Teoría: 503 B (08:00 a 10:15 Horas)
 - Laboratorio: 302-B (10:15 a 12:30 Horas)
+- Campus: http://campusvirtual.uch.edu.pe/course/index.php
 
 
 # DOCENTE
