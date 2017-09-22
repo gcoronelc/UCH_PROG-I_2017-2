@@ -39,6 +39,8 @@
 - Curso de Java: https://devcode.la/cursos/fundamentos-java/
 - Grupo de Java: https://www.facebook.com/groups/universidadjava/
 - Código Fuente JAVA-CS: https://goo.gl/eCQstU
+- Analisis y Diseño Orientado a Objetos: https://youtu.be/xyuyCoYKvy0
+- Pruebas de Software: https://youtu.be/pII2WpxJQg4
 
 
 # AUTO-EVALUACIÓN
