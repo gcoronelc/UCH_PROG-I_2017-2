@@ -5,7 +5,7 @@
 ![PROGRAMACIÓN I](https://raw.githubusercontent.com/gcoronelc/UCH_PROG-I_2017-2/master/Fotos/Foto05.jpg)
 
 
-# DATOS DEL CURSO
+## DATOS DEL CURSO
 
 - Lugar: UNIVERSIDAD DE CIENCIAS Y HUMANIDADES
 - Horario: VIERNES DE 08:00 a 12:30 Horas
