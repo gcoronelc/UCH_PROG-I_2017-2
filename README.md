@@ -1,11 +1,11 @@
+# PROGRAMACIÓN I
+
 ![PROGRAMACIÓN I](https://raw.githubusercontent.com/gcoronelc/UCH_PROG-I_2017-2/master/Img/uch.png)
 
-![PROGRAMACIÓN I](https://raw.githubusercontent.com/gcoronelc/UCH_PROG-I_2017-2/master/Img/ds.png)
-
-![PROGRAMACIÓN I](https://raw.githubusercontent.com/gcoronelc/UCH_PROG-I_2017-2/master/Img/java-cs.png)
+![PROGRAMACIÓN I](https://raw.githubusercontent.com/gcoronelc/UCH_PROG-I_2017-2/master/Fotos/Foto05.jpg)
 
 
-# PROGRAMACIÓN I
+# DATOS DEL CURSO
 
 - Lugar: UNIVERSIDAD DE CIENCIAS Y HUMANIDADES
 - Horario: VIERNES DE 08:00 a 12:30 Horas
@@ -15,14 +15,14 @@
 - Campus: http://campusvirtual.uch.edu.pe/course/index.php
 
 
-# DOCENTE
+## DOCENTE
 
 - Docente: Eric Gustavo Coronel Castillo
 - Blog: www.desarrollasoftware.com
 - Correo: ecoronel@uch.edu.pe
 
 
-# RECURSOS RECOMENDADOS
+## RECURSOS RECOMENDADOS
 
 - Curso de Git: https://www.udemy.com/git-started-with-github
 - Recursos de Java: http://gcoronelc.blogspot.pe/p/java.html
@@ -43,7 +43,7 @@
 - Pruebas de Software: https://youtu.be/pII2WpxJQg4
 
 
-# AUTO-EVALUACIÓN
+## AUTO-EVALUACIÓN
 
 - Enlace 1: http://cibertest.com/test-examen/11/java
 - Enlace 2: http://www.digitallearning.es/tests/java-poo.html
@@ -68,3 +68,10 @@
 - Enlace 21: http://www.techbeamers.com/category/java-quiz/
 - Enlace 22: https://modernpathshala.com/
 - Enlace 23: http://www.whizlabs.com
+
+
+## INFORMACION UTIL
+
+![PROGRAMACIÓN I](https://raw.githubusercontent.com/gcoronelc/UCH_PROG-I_2017-2/master/Img/ds.png)
+
+![PROGRAMACIÓN I](https://raw.githubusercontent.com/gcoronelc/UCH_PROG-I_2017-2/master/Img/java-cs.png)
