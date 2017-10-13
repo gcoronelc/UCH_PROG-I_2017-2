@@ -10,7 +10,7 @@
 - Lugar: UNIVERSIDAD DE CIENCIAS Y HUMANIDADES
 - Horario: VIERNES DE 08:00 a 12:30 Horas
 - Inicio: 18-AGOSTO-2017
-- Teoría: 503 B (08:00 a 10:15 Horas)
+- Teoría: 505-B (08:00 a 10:15 Horas)
 - Laboratorio: 302-B (10:15 a 12:30 Horas)
 - Campus: http://campusvirtual.uch.edu.pe/course/index.php
 
@@ -41,6 +41,8 @@
 - Código Fuente JAVA-CS: https://goo.gl/eCQstU
 - Analisis y Diseño Orientado a Objetos: https://youtu.be/xyuyCoYKvy0
 - Pruebas de Software: https://youtu.be/pII2WpxJQg4
+- Analisis: https://www.youtube.com/watch?v=2Bcbls0bBzs&list=PLA32765565E3148F8
+
 
 
 ## AUTO-EVALUACIÓN
