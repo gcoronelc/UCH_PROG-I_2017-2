@@ -42,7 +42,9 @@
 - Analisis y Diseño Orientado a Objetos: https://youtu.be/xyuyCoYKvy0
 - Pruebas de Software: https://youtu.be/pII2WpxJQg4
 - Analisis: https://www.youtube.com/watch?v=2Bcbls0bBzs&list=PLA32765565E3148F8
-
+- UML: https://www.youtube.com/watch?v=2Bcbls0bBzs&list=PLA32765565E3148F8
+- Test Unitarios: https://youtu.be/6EqQWVQNwlw
+- Test Unitarios: https://youtu.be/B0jf0ENdFsY
 
 
 ## AUTO-EVALUACIÓN
