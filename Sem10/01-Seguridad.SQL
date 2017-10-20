@@ -64,6 +64,8 @@ CREATE TABLE USUARIO
 	FOREIGN KEY FK_USUARIO_ROL (idrol) REFERENCES ROL (idrol)
 );
 
+CREATE UNIQUE INDEX idx_usuario_usuario
+ON USUARIO (usuario);
 
 -- =============================================
 -- Cargar Datos

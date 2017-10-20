@@ -1,5 +1,7 @@
 package pe.egcc.colegioapp;
 
+import pe.egcc.colegioapp.view.LogonView;
+
 /**
  *
  * @author Gustavo Coronel
@@ -9,7 +11,7 @@ package pe.egcc.colegioapp;
 public class ColegioApp {
 
     public static void main(String[] args) {
-
+      LogonView.main(args);
     }
     
 }
