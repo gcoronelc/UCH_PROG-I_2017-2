@@ -22,9 +22,7 @@ GRUPO 4
 - Jara
 - Vasquez
 - Roca
-
-
-Torres
+- Torres
 
 
 
