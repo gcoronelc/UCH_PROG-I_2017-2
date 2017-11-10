@@ -3,9 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/EGCC/PortableGit/UCH_PROG-I_2017-2/Sem12/ColegioApp/src/pe/egcc/colegioapp/service/ColegioService.java</file>
-            <file>file:/E:/EGCC/PortableGit/UCH_PROG-I_2017-2/Sem12/ColegioApp/src/pe/egcc/colegioapp/prueba/Prueba02.java</file>
-            <file>file:/E:/EGCC/PortableGit/UCH_PROG-I_2017-2/Sem12/ColegioApp/src/pe/egcc/colegioapp/prueba/Prueba03.java</file>
+            <file>file:/E:/EGCC/UCH_PROG-I_2017-2/Sem12/ColegioApp/src/pe/egcc/colegioapp/controller/SeccionesController.java</file>
+            <file>file:/E:/EGCC/UCH_PROG-I_2017-2/Sem12/ColegioApp/src/pe/egcc/colegioapp/service/ColegioService.java</file>
+            <file>file:/E:/EGCC/UCH_PROG-I_2017-2/Sem12/ColegioApp/src/pe/egcc/colegioapp/model/Combo.java</file>
+            <file>file:/E:/EGCC/UCH_PROG-I_2017-2/Sem12/ColegioApp/src/pe/egcc/colegioapp/view/UtilView.java</file>
+            <file>file:/E:/EGCC/UCH_PROG-I_2017-2/Sem12/ColegioApp/src/pe/egcc/colegioapp/view/ProgramarSeccionView.java</file>
+            <file>file:/E:/EGCC/UCH_PROG-I_2017-2/Sem12/ColegioApp/src/pe/egcc/colegioapp/controller/LogonController.java</file>
+            <file>file:/E:/EGCC/UCH_PROG-I_2017-2/Sem12/ColegioApp/src/pe/egcc/colegioapp/view/MainView.java</file>
+            <file>file:/E:/EGCC/UCH_PROG-I_2017-2/Sem12/ColegioApp/src/pe/egcc/colegioapp/model/Seccion.java</file>
         </group>
     </open-files>
 </project-private>
