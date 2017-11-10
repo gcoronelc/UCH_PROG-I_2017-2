@@ -4,7 +4,10 @@ public class Seccion {
 
     private int seccion;
     private int periodo;
+    private int nivel;
+    private String nomnivel;
     private int grado;
+    private String nomgrado;
     private String nombre;
     private int vacantes;
     private int matriculados;
@@ -28,12 +31,36 @@ public class Seccion {
         this.periodo = periodo;
     }
 
+    public int getNivel() {
+        return nivel;
+    }
+
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
+    public String getNomnivel() {
+        return nomnivel;
+    }
+
+    public void setNomnivel(String nomnivel) {
+        this.nomnivel = nomnivel;
+    }
+
     public int getGrado() {
         return grado;
     }
 
     public void setGrado(int grado) {
         this.grado = grado;
+    }
+
+    public String getNomgrado() {
+        return nomgrado;
+    }
+
+    public void setNomgrado(String nomgrado) {
+        this.nomgrado = nomgrado;
     }
 
     public String getNombre() {

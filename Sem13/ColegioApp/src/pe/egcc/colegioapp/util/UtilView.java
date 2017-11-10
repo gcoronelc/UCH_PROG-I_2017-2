@@ -1,4 +1,4 @@
-package pe.egcc.colegioapp.view;
+package pe.egcc.colegioapp.util;
 
 import java.util.List;
 import javax.swing.JComboBox;
@@ -10,9 +10,9 @@ public final class UtilView {
   }
   
   // Constantes del CRUD
-  public static String CRUD_NUEVO = "NUEVO";
-  public static String CRUD_EDITAR = "EDITAR";
-  public static String CRUD_ELIMINAR = "ELIMINAR";
+  public static final String CRUD_NUEVO = "NUEVO";
+  public static final String CRUD_EDITAR = "EDITAR";
+  public static final String CRUD_ELIMINAR = "ELIMINAR";
   
   
 

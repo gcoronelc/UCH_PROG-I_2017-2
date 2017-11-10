@@ -4,6 +4,7 @@ public class Combo {
 
     private int code;
     private String label;
+    private int activo;
 
     public Combo() {
     }
@@ -27,6 +28,14 @@ public class Combo {
 
     public void setLabel(String label) {
         this.label = label;
+    }
+
+    public int getActivo() {
+        return activo;
+    }
+
+    public void setActivo(int activo) {
+        this.activo = activo;
     }
 
     @Override

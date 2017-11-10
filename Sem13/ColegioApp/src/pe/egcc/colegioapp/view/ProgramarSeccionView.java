@@ -1,15 +1,17 @@
 package pe.egcc.colegioapp.view;
 
+import pe.egcc.colegioapp.util.UtilView;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
 import pe.egcc.colegioapp.controller.SeccionesController;
 import pe.egcc.colegioapp.model.Combo;
 import pe.egcc.colegioapp.model.Seccion;
+import pe.egcc.colegioapp.util.Memoria;
 
 public class ProgramarSeccionView extends javax.swing.JInternalFrame {
 
     private SeccionesController seccionesController;
-    
+
     /**
      * Creates new form ProgramarSeccionView
      */
@@ -19,8 +21,6 @@ public class ProgramarSeccionView extends javax.swing.JInternalFrame {
         llenarPeriodos();
         llenarNiveles();
     }
-    
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -185,10 +185,29 @@ public class ProgramarSeccionView extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_cboPeriodoActionPerformed
 
   private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
-    
-    EditarSeccionView view = new EditarSeccionView(null, true);
-    view.setVisible(true);
-    
+      
+      if(!hayCriterio()){
+          return;
+      }
+      
+      Combo periodo = (Combo) cboPeriodo.getSelectedItem();
+      Combo nivel = (Combo) cboNivel.getSelectedItem();
+      
+      Seccion seccion = new Seccion();
+      seccion.setPeriodo(periodo.getCode());
+      seccion.setNivel(nivel.getCode());
+      seccion.setNomnivel(nivel.getLabel());
+      
+      Memoria.put("accion", UtilView.CRUD_NUEVO);
+      Memoria.put("seccion", seccion);
+      
+      EditarSeccionView view = new EditarSeccionView(null, true);
+      view.setVisible(true);
+
+      if(Memoria.get("seccion").toString().equals("OK")){
+        cargarSecciones();
+      }
+      
   }//GEN-LAST:event_btnNuevoActionPerformed
 
 
@@ -210,22 +229,20 @@ public class ProgramarSeccionView extends javax.swing.JInternalFrame {
         periodos = seccionesController.leerPeriodosProgramar();
         UtilView.llenarCombo(cboPeriodo, periodos);
     }
-    
+
     private void llenarNiveles() {
         List<Combo> niveles;
         niveles = seccionesController.leerNiveles();
         UtilView.llenarCombo(cboNivel, niveles);
     }
-    
-    private void cargarSecciones(){
+
+    private void cargarSecciones() {
         // Definir el acceso a la tabla
         DefaultTableModel tabla;
         tabla = (DefaultTableModel) tblData.getModel();
         tabla.setRowCount(0);
         // Leer indices de los combos
-        int indice1 = cboPeriodo.getSelectedIndex();
-        int indice2 = cboNivel.getSelectedIndex();
-        if(indice1 == -1 || indice2 == -1){
+        if(! hayCriterio()){
             return;
         }
         // Valores seleccionados
@@ -246,4 +263,13 @@ public class ProgramarSeccionView extends javax.swing.JInternalFrame {
             tabla.addRow(rowData);
         }
     }
+
+    public boolean hayCriterio() {
+        boolean estado;
+        int indice1 = cboPeriodo.getSelectedIndex();
+        int indice2 = cboNivel.getSelectedIndex();
+        estado = indice1 > -1 && indice2 > -1;
+        return estado;
+    }
+
 }
