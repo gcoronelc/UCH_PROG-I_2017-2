@@ -273,11 +273,12 @@ public class EditarSeccionView extends javax.swing.JDialog {
         throw new Exception(estado.getTexto());
       }
       Mensaje.showInfo(rootPane, estado.getTexto());
-      Memoria.put("seccion", "OK");
+      Memoria.put("seccion", seccion);
       this.dispose();
       
     } catch (Exception e) {
       
+      e.printStackTrace();
       Mensaje.showError(rootPane, e.getMessage());
       
     }

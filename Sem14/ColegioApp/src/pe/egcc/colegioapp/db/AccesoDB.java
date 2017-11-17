@@ -20,7 +20,7 @@ public final class AccesoDB {
     try {
       // Datos MySQL
       String driver = "com.mysql.jdbc.Driver";
-      String url = "jdbc:mysql://localhost:3306/COLEGIODB";
+      String url = "jdbc:mysql://192.168.7.30:3306/COLEGIODB";
       String user = "colegio";
       String pass = "admin";
       // Cargar el driver a memoria

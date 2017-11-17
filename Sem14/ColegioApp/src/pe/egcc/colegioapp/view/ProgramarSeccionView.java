@@ -7,6 +7,7 @@ import pe.egcc.colegioapp.controller.SeccionesController;
 import pe.egcc.colegioapp.model.Combo;
 import pe.egcc.colegioapp.model.Seccion;
 import pe.egcc.colegioapp.util.Memoria;
+import pe.egcc.colegioapp.util.Mensaje;
 
 public class ProgramarSeccionView extends javax.swing.JInternalFrame {
 
@@ -214,7 +215,7 @@ public class ProgramarSeccionView extends javax.swing.JInternalFrame {
     view.setVisible(true);
 
     Object obj = Memoria.get("seccion");
-    if (obj != null && obj.toString().equals("OK")) {
+    if ( obj != null ) {
       cargarSecciones();
     }
 
@@ -236,6 +237,11 @@ public class ProgramarSeccionView extends javax.swing.JInternalFrame {
     EditarSeccionView view = new EditarSeccionView(null, true);
     view.setVisible(true);
     
+    Object obj = Memoria.get("seccion");
+    if ( obj != null ) {
+      tblData.setValueAt(seccion.getNombre(), selectedRow, 1); 
+      tblData.setValueAt(seccion.getVacantes(), selectedRow, 4); 
+    }
 
   }//GEN-LAST:event_btnEditarActionPerformed
 
@@ -247,6 +253,12 @@ public class ProgramarSeccionView extends javax.swing.JInternalFrame {
     }
 
     Seccion seccion = secciones.get(selectedRow);
+    
+    if( seccion.getMatriculados() > 0 ){
+        Mensaje.showError(rootPane, "No se puede eliminar, hay matriculados.");
+        return;
+    }
+    
 
     Memoria.put("accion", UtilView.CRUD_ELIMINAR);
     Memoria.put("seccion", seccion);
@@ -254,6 +266,10 @@ public class ProgramarSeccionView extends javax.swing.JInternalFrame {
     EditarSeccionView view = new EditarSeccionView(null, true);
     view.setVisible(true);
     
+    Object obj = Memoria.get("seccion");
+    if ( obj != null ) {
+      cargarSecciones();
+    }
     
   }//GEN-LAST:event_btnEliminarActionPerformed
 

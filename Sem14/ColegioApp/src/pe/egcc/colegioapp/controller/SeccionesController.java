@@ -34,10 +34,20 @@ public class SeccionesController {
   public Estado procesarSeccion(String accion, Seccion seccion) {
     Estado estado = null;
     switch (accion) {
+        
       case UtilView.CRUD_NUEVO:
         estado = colegioService.crearSeccion(seccion.getNombre(),
-                seccion.getPeriodo(), seccion.getGrado(), 1);
+                seccion.getPeriodo(), seccion.getGrado(), seccion.getVacantes());
         break;
+        
+      case UtilView.CRUD_EDITAR:
+        estado = colegioService.modificarSeccion(seccion);
+        break;
+        
+      case UtilView.CRUD_ELIMINAR:
+        estado = colegioService.eliminarSeccion(seccion.getSeccion());
+        break;
+        
     }
     return estado;
   }

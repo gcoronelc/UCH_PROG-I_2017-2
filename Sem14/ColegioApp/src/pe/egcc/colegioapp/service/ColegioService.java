@@ -13,6 +13,83 @@ import pe.egcc.colegioapp.model.Seccion;
 
 public class ColegioService {
 
+  public Estado eliminarSeccion(int seccion) {
+    Estado estado;
+    Connection cn = null;
+    try {
+      cn = AccesoDB.getConnection();
+      cn.setAutoCommit(false);
+      // Inicio de proceso
+
+      String sql = "delete from SECCION "
+              + "where seccion = ? and matriculados = 0";
+      PreparedStatement pstm = cn.prepareStatement(sql);
+      pstm.setInt(1, seccion);
+      int filas = pstm.executeUpdate();
+      pstm.close();
+
+      if(filas != 1){
+          throw new Exception("Error en el proceso.");
+      }
+      
+      // Fin de proceso
+      cn.commit();
+      estado = new Estado(1, "Proceso ejecutado correctamente.");
+    } catch (Exception e) {
+      try {
+        cn.rollback();
+      } catch (Exception e1) {
+      }
+      estado = new Estado(-1, e.getMessage());
+    } finally {
+      try {
+        cn.close();
+      } catch (Exception e) {
+      }
+    }
+    return estado;
+  }
+  
+  public Estado modificarSeccion(Seccion seccion) {
+    Estado estado;
+    Connection cn = null;
+    try {
+      cn = AccesoDB.getConnection();
+      cn.setAutoCommit(false);
+      // Inicio de proceso
+
+      String sql = "update SECCION "
+              + "set nombre = ?, vacantes = ? "
+              + "where seccion = ? ";
+      PreparedStatement pstm = cn.prepareStatement(sql);
+      pstm.setString(1, seccion.getNombre());
+      pstm.setInt(2, seccion.getVacantes());
+      pstm.setInt(3, seccion.getSeccion());
+      int filas = pstm.executeUpdate();
+      pstm.close();
+
+      if(filas != 1){
+          throw new Exception("Error en el proceso.");
+      }
+      
+      // Fin de proceso
+      cn.commit();
+      estado = new Estado(1, "Proceso ejecutado correctamente.");
+    } catch (Exception e) {
+      try {
+        cn.rollback();
+      } catch (Exception e1) {
+      }
+      estado = new Estado(-1, e.getMessage());
+    } finally {
+      try {
+        cn.close();
+      } catch (Exception e) {
+      }
+    }
+    return estado;
+  }
+  
   public Estado crearSeccion(String nombre, int periodo, int grado, int vacantes) {
     Estado estado;
     Connection cn = null;
