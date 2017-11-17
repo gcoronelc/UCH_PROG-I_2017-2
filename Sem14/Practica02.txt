@@ -1,0 +1,5 @@
+Procesos a Desarrollar
+=======================================================================================
+1.- Matricula de un estudiante y todo los concerniente para ejecutarse correctamente.
+2.- Consulta de Matriculas
+3.- Consulta de cronograma de cuotas
